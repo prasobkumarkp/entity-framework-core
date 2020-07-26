@@ -8,7 +8,7 @@ namespace EntityFrameworkCore.Data
         {
         }
 
-        public DbSet<Contact> Contats { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
         public DbSet<ToDo> ToDos { get; set; }
     }
 }

@@ -30,27 +30,27 @@ ref : https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs
 ## Sqlite
 
 Open database
-```sh
+```sql
 .open ./Data/SqlLite.db
 ```
 Create table
-```sh
+```sql
 create table tabler(firstname text not null, lastname text);
 ```
 Insert into table
-```sh
+```sql
 insert into tabler values("Prasob", "kumar");
 ```
 Select data from table
-```sh
+```sql
 select * from tabler;
 ```
 Show tables
-```sh
+```sql
 .tables
 ```
 Quit database
-```sh
+```sql
 .quit
 ```
 

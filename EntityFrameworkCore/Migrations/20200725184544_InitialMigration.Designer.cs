@@ -37,7 +37,7 @@ namespace EntityFrameworkCore.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contats");
+                    b.ToTable("Contacts");
                 });
 
             modelBuilder.Entity("EntityFrameworkCore.Data.ToDo", b =>

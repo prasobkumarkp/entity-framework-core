@@ -8,9 +8,9 @@ namespace EntityFrameworkCore.Data
         public static void InitilizeWithFakeData(AppDbContext context)
         {
             context.Database.EnsureCreated();
-            if (!context.Contats.Any())
+            if (!context.Contacts.Any())
             {
-                context.Contats.AddRange(
+                context.Contacts.AddRange(
                     new Contact { FirstName = "Aditi", LastName = "Bhatia", Email = "aditi.bhatia@gmail.com" },
                     new Contact { FirstName = "Kiran", LastName = "Sharma", Email = "kiran.sharma@gmail.com" },
                     new Contact { FirstName = "James", LastName = "William", Email = "james.william@gmail.com" },

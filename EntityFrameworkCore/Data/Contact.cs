@@ -10,5 +10,6 @@ namespace EntityFrameworkCore.Data
         public string LastName { get; set; }
         [Required]
         public string Email { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

@@ -20,8 +20,9 @@ namespace EntityFrameworkCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MssqlConnection")));
-            services.AddDbContext<AppDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("SqlLiteConnection")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MssqlConnection")));
+            // Sqlite migrations are not completly supported by Sqlite and cannot migrate Sqlite migrations to SQLServer.
+            // services.AddDbContext<AppDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("SqlLiteConnection")));
             services.AddControllersWithViews();
         }
 

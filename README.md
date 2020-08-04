@@ -1,58 +1,9 @@
 # entity-framework-core
 
-## EnityFrameworkCore
+## EntityFrameworkCore
 
-Instruct EF Core to create a migration named InitialCreate:
-```sh
-dotnet ef migrations add InitialCreate
-```
+./EntityFrameworkCore/README.md
 
-Create your database and create your schema from the migration
-```sh
-dotnet ef database update
-```
+## EntityFrameworkCore.Tests
 
-Create a new migration
-```sh
-dotnet ef migrations add AddBlogCreatedTimestamp
-```
-
-Apply your migration
-```sh
-dotnet ef database update
-```
-
-### Full list of commands
-ref : https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
-
-<br/>
-
-## Sqlite
-
-Open database
-```sql
-.open ./Data/SqlLite.db
-```
-Create table
-```sql
-create table tabler(firstname text not null, lastname text);
-```
-Insert into table
-```sql
-insert into tabler values("Prasob", "kumar");
-```
-Select data from table
-```sql
-select * from tabler;
-```
-Show tables
-```sql
-.tables
-```
-Quit database
-```sql
-.quit
-```
-
-### Full list of commands
-ref : https://sqlite.org/cli.html
+./EntityFrameworkCore.Tests/README.md

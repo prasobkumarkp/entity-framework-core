@@ -1,4 +1,8 @@
 # entity-framework-core
+Update entity framework core
+```sh
+dotnet tool update --global dotnet-ef
+```
 
 ## EnityFrameworkCore
 

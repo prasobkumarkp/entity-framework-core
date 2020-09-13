@@ -29,6 +29,10 @@ Remove your last migration
 ```sh
 dotnet ef database remove
 ```
+List all migrations
+```sh
+dotnet ef database list
+```
 
 ### Full list of commands
 ref : https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
